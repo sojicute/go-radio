@@ -13,7 +13,7 @@ RUN go mod download
 RUN go env -w GOARCH=wasm GOOS=js
 RUN go build -o web/app.wasm ./app
 
-RUN go env -w GOARCH=amd64 GOOS=windows
+RUN go env -w GOARCH=amd64 GOOS=linux
 RUN go build -o hello ./server
 
 
