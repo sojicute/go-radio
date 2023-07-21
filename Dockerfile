@@ -21,4 +21,4 @@ RUN go build -o hello ./server
 EXPOSE 8080
 
 # Define the command to run the app when the container starts
-CMD ["/go-app/server/main"]
+CMD ["/go-app/server/hello"]
